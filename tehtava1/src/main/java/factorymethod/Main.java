@@ -8,5 +8,8 @@ public class Main {
 
         AterioivaOtus oppilas = new Oppilas();
         oppilas.aterioi();
+
+        AterioivaOtus sihteeri = new Sihteeri();
+        sihteeri.aterioi();
     }
 }
