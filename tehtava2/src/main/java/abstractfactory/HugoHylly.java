@@ -4,6 +4,11 @@
  */
 package abstractfactory;
 
+import abstractfactory.boss.BossFarkut;
+import abstractfactory.boss.BossKengat;
+import abstractfactory.boss.BossLippis;
+import abstractfactory.boss.BossTpaita;
+
 /**
  *
  * @author tristan
@@ -12,22 +17,22 @@ public class HugoHylly implements IVaatekaappi {
 
     @Override
     public IFarkut pueFarmarit() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new BossFarkut();
     }
 
     @Override
     public ITpaita pueTpaita() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new BossTpaita();
     }
 
     @Override
     public ILippis pueLippis() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new BossLippis();
     }
 
     @Override
     public IKengat pueKengat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new BossKengat();
     }
     
 }

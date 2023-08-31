@@ -6,6 +6,7 @@ package abstractfactory;
  */
 public class Jasper {
     private IVaatekaappi kaappi;
+    private boolean valmistunut = false;
     
     public Jasper(IVaatekaappi kaappi){
         this.kaappi = kaappi;
@@ -17,4 +18,20 @@ public class Jasper {
         System.out.println(kaappi.pueLippis());
         System.out.println(kaappi.pueKengat());
     }
+
+    public boolean isValmistunut() {
+        return valmistunut;
+    }
+
+    public void setValmistunut(boolean valmistunut) {
+        this.valmistunut = valmistunut;
+    }
+
+    public void setKaappi(IVaatekaappi kaappi) {
+        this.kaappi = kaappi;
+    }
+    
+    
+    
+    
 }
