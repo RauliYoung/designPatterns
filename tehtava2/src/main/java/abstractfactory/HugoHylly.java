@@ -4,30 +4,35 @@
  */
 package abstractfactory;
 
+import abstractfactory.boss.BossFarkut;
+import abstractfactory.boss.BossKengat;
+import abstractfactory.boss.BossLippis;
+import abstractfactory.boss.BossTpaita;
+
 /**
  *
  * @author tristan
  */
-public class HugoHylly implements Vaatekaappi {
+public class HugoHylly implements IVaatekaappi {
 
     @Override
-    public Farkut pueFarmarit() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public IFarkut pueFarmarit() {
+        return new BossFarkut();
     }
 
     @Override
-    public Tpaita pueTpaita() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public ITpaita pueTpaita() {
+        return new BossTpaita();
     }
 
     @Override
-    public Lippis pueLippis() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public ILippis pueLippis() {
+        return new BossLippis();
     }
 
     @Override
-    public Kengat pueKengat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public IKengat pueKengat() {
+        return new BossKengat();
     }
     
 }

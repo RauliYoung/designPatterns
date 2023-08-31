@@ -4,30 +4,35 @@
  */
 package abstractfactory;
 
+import abstractfactory.adidas.AdidasFarkut;
+import abstractfactory.adidas.AdidasKengat;
+import abstractfactory.adidas.AdidasLippis;
+import abstractfactory.adidas.AdidasTpaita;
+
 /**
  *
  * @author tristan
  */
-public class AdidasHylly implements Vaatekaappi{
+public class AdidasHylly implements IVaatekaappi{
 
     @Override
-    public Farkut pueFarmarit() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public IFarkut pueFarmarit() {
+        return new AdidasFarkut();
     }
 
     @Override
-    public Tpaita pueTpaita() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public ITpaita pueTpaita() {
+        return new AdidasTpaita();
     }
 
     @Override
-    public Lippis pueLippis() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public ILippis pueLippis() {
+        return new AdidasLippis();
     }
 
     @Override
-    public Kengat pueKengat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public IKengat pueKengat() {
+        return new AdidasKengat();
     }
     
 }

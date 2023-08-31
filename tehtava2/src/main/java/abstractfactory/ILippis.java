@@ -8,6 +8,7 @@ package abstractfactory;
  *
  * @author tristan
  */
-class Tpaita {
+public interface ILippis {
+
     
 }
