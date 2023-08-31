@@ -11,22 +11,22 @@ package abstractfactory;
 public class HugoHylly implements IVaatekaappi {
 
     @Override
-    public Farkut pueFarmarit() {
+    public IFarkut pueFarmarit() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Tpaita pueTpaita() {
+    public ITpaita pueTpaita() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Lippis pueLippis() {
+    public ILippis pueLippis() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Kengat pueKengat() {
+    public IKengat pueKengat() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

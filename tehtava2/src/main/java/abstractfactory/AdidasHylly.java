@@ -4,6 +4,11 @@
  */
 package abstractfactory;
 
+import abstractfactory.adidas.AdidasFarkut;
+import abstractfactory.adidas.AdidasKengat;
+import abstractfactory.adidas.AdidasLippis;
+import abstractfactory.adidas.AdidasTpaita;
+
 /**
  *
  * @author tristan
@@ -11,23 +16,23 @@ package abstractfactory;
 public class AdidasHylly implements IVaatekaappi{
 
     @Override
-    public Farkut pueFarmarit() {
-        return new Farkut();
+    public IFarkut pueFarmarit() {
+        return new AdidasFarkut();
     }
 
     @Override
-    public Tpaita pueTpaita() {
-        return new Tpaita();
+    public ITpaita pueTpaita() {
+        return new AdidasTpaita();
     }
 
     @Override
-    public Lippis pueLippis() {
-        return new Lippis();
+    public ILippis pueLippis() {
+        return new AdidasLippis();
     }
 
     @Override
-    public Kengat pueKengat() {
-        return new Kengat();
+    public IKengat pueKengat() {
+        return new AdidasKengat();
     }
     
 }

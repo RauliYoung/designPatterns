@@ -8,11 +8,7 @@ package abstractfactory;
  *
  * @author tristan
  */
-class Lippis {
+public interface ILippis {
 
-    @Override
-    public String toString() {
-        return "Lippis{" + '}';
-    }
     
 }
