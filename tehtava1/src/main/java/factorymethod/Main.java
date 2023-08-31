@@ -10,6 +10,6 @@ public class Main {
         oppilas.aterioi();
 
         AterioivaOtus sihteeri = new Sihteeri();
-        sihteeri.aterioi();
+        sihteeri.aterioi();       
     }
 }
