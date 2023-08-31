@@ -8,26 +8,26 @@ package abstractfactory;
  *
  * @author tristan
  */
-public class AdidasHylly implements Vaatekaappi{
+public class AdidasHylly implements IVaatekaappi{
 
     @Override
     public Farkut pueFarmarit() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new Farkut();
     }
 
     @Override
     public Tpaita pueTpaita() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new Tpaita();
     }
 
     @Override
     public Lippis pueLippis() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new Lippis();
     }
 
     @Override
     public Kengat pueKengat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return new Kengat();
     }
     
 }

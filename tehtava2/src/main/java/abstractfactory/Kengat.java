@@ -9,5 +9,10 @@ package abstractfactory;
  * @author tristan
  */
 class Kengat {
+
+    @Override
+    public String toString() {
+        return "Kengat{" + '}';
+    }
     
 }

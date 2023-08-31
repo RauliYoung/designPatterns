@@ -9,5 +9,10 @@ package abstractfactory;
  * @author tristan
  */
 class Lippis {
+
+    @Override
+    public String toString() {
+        return "Lippis{" + '}';
+    }
     
 }

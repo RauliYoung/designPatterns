@@ -8,7 +8,7 @@ package abstractfactory;
  *
  * @author tristan
  */
-public class HugoHylly implements Vaatekaappi {
+public class HugoHylly implements IVaatekaappi {
 
     @Override
     public Farkut pueFarmarit() {

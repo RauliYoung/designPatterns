@@ -9,5 +9,11 @@ package abstractfactory;
  * @author tristan
  */
 class Farkut {
+
+    public String toString() {
+        return "Leviksen Stringit";
+    }
     
 }
+
+
