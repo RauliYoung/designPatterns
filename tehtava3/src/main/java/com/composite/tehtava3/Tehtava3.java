@@ -1,5 +1,8 @@
 package com.composite.tehtava3;
 
+import komponentit.Emolevy;
+import kotelo.Kotelo;
+
 /**
  *
  * @author rauliyoung
@@ -7,6 +10,12 @@ package com.composite.tehtava3;
 public class Tehtava3 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Kotelo kotelo = new Kotelo(80);
+        Emolevy assRock = new Emolevy(55);
+        
+        kotelo.lisaaKomponentti(assRock);
+        
+        System.out.println("Koko koneen hinta on: " + kotelo.haeHinta());
+        
     }
 }
