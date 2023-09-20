@@ -16,6 +16,7 @@ public class Tehtava4 {
     public static void main(String[] args) {
         
         DigitalClock digi = new DigitalClock();
+        DigitalClock dig1 = new DigitalClock();
         
        
         

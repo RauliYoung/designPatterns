@@ -10,14 +10,16 @@ import java.util.Observer;
  * @author rauliyoung
  */
 public class DigitalClock implements Observer {
-    
+    private static int CLOCKID = 0;
     private Timer timer;
-
+    private int id;
     public DigitalClock() {
         this.timer = new Timer();
         timer.addObserver(this);
         Thread timerThread =new Thread(this.timer);
         timerThread.start();
+        this.id = CLOCKID;
+        CLOCKID++;
     }
     
     
@@ -25,7 +27,7 @@ public class DigitalClock implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         if(o == timer) {
-          System.out.println(LocalTime.now(timer.getClock().systemDefaultZone()));  
+          System.out.println("Kello " + id + " " + LocalTime.now(timer.getClock().systemDefaultZone()));  
         }
         
     }

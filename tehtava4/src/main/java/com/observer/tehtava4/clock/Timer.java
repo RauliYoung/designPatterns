@@ -6,14 +6,9 @@ package com.observer.tehtava4.clock;
 
 import com.observer.tehtava4.subject.Subject;
 import java.time.Clock;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.util.Observable;
-import java.util.Observer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.text.DateFormatter;
+
 
 /**
  *
