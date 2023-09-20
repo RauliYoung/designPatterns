@@ -8,5 +8,4 @@ public interface IVaatekaappi {
     public abstract ITpaita pueTpaita();
     public abstract ILippis pueLippis();
     public abstract IKengat pueKengat();
- 
 }
