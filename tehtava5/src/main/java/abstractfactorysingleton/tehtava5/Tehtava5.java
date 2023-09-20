@@ -16,9 +16,10 @@ public class Tehtava5 {
 
     public static void main(String[] args) {
         ITehdas nuuskatehdas = Nuuskatehdas.getInstance();
-        
+        ITehdas nuuskis = Nuuskatehdas.getInstance();
+        INuuska ettan = nuuskis.luoNuuska("Ettan", 3);
         INuuska general = nuuskatehdas.luoNuuska("General", 5);
         System.out.println(general.toString());
-        
+        System.out.println(ettan.toString());
     }
 }
