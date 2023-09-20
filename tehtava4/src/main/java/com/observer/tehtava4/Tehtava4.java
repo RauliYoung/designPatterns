@@ -4,6 +4,9 @@
 
 package com.observer.tehtava4;
 
+
+import com.observer.tehtava4.clock.DigitalClock;
+
 /**
  *
  * @author rauliyoung
@@ -11,6 +14,13 @@ package com.observer.tehtava4;
 public class Tehtava4 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        DigitalClock digi = new DigitalClock();
+        
+       
+        
+        
+        
+        
     }
 }
