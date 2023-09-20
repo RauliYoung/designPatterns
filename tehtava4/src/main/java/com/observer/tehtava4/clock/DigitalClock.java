@@ -1,6 +1,7 @@
 package com.observer.tehtava4.clock;
 
 import java.time.Clock;
+import java.time.LocalTime;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -23,6 +24,9 @@ public class DigitalClock implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
+        if(o == timer) {
+          System.out.println(LocalTime.now(timer.getClock().systemDefaultZone()));  
+        }
         
     }
     

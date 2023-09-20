@@ -22,6 +22,10 @@ import javax.swing.text.DateFormatter;
 public class Timer extends Subject implements Runnable{
      
      private Clock clock ;
+
+    public Clock getClock() {
+        return clock;
+    }
     
      private int kesto = 0;
     
@@ -34,7 +38,6 @@ public class Timer extends Subject implements Runnable{
     public void run() {
         while(kesto < 100){
             try {
-                System.out.println(LocalTime.now(clock.systemDefaultZone()));
                 Thread.sleep(1000);
                 tick();
                 kesto++;
@@ -45,5 +48,7 @@ public class Timer extends Subject implements Runnable{
         
         
     }
+    
+    
     
 }
