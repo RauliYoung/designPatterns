@@ -15,14 +15,14 @@ public class Tehtava6 {
 
     public static void main(String[] args) {
         System.out.println("Hello Simo Silander, hyvää sunnuntaita!");
-        Pizza darra = new Pizzapohja();
+        Pizza synttariPizza = new Pizzapohja();
         
-        darra = new Tomaattikastike(darra);
-        darra = new Kinkkusuikale(darra);
-        darra = new Juusto(darra);
-        darra = new Valkosipuli(darra);
+        synttariPizza = new Tomaattikastike(synttariPizza);
+        synttariPizza = new Kinkkusuikale(synttariPizza);
+        synttariPizza = new Juusto(synttariPizza);
+        synttariPizza = new Valkosipuli(synttariPizza);
         
-        System.out.println(darra.getKuvaus() + " ja pizzan hinta on " + darra.getHinta() + " euroa.");
+        System.out.println(synttariPizza.getKuvaus() + " ja pizzan hinta on " + synttariPizza.getHinta() + " euroa.");
         System.out.println("Voisi melkein ajatella että onko pizzasta maksettu veroja?");
         
     }
