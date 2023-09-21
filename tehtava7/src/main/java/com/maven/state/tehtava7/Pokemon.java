@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.maven.state.tehtava7;
 
 /**
@@ -31,6 +27,22 @@ public class Pokemon {
 
     public void setXp(int xp) {
         this.xp = xp;
+    }
+    
+    public void growl() {
+        System.out.println("ROAR");
+    }
+    
+    public void scratch() {
+        System.out.println("SCRATCH");
+    }
+    
+    public void ember() {
+        System.out.println("BURN");
+    }
+    
+    public void dragonBreath() {
+        System.out.println("Dragon breath burnns");
     }
     
     
