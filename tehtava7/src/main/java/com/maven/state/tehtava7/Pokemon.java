@@ -5,12 +5,33 @@ package com.maven.state.tehtava7;
  * @author tristan
  */
 public class Pokemon {
+
+    public static int stage = 1;
+    private PokemonTrainer state;
     private int hp;
     private int xp;
 
     public Pokemon() {
         this.hp = 20;
         this.xp = 0;
+        state = Charmander.getInstance();
+    }
+
+    public PokemonTrainer getState() {
+        return state;
+    }
+
+    protected void setState(PokemonTrainer state) {
+        this.state = state;
+        stage++;
+    }
+
+    public void attack() {
+        state.attack();
+    }
+
+    public void train() {
+        state.train(this);
     }
 
     public int getHp() {
@@ -26,24 +47,10 @@ public class Pokemon {
     }
 
     public void setXp(int xp) {
-        this.xp = xp;
+        this.xp += xp;
     }
-    
-    public void growl() {
-        System.out.println("ROAR");
+
+    protected void resetXp() {
+        this.xp = 0;
     }
-    
-    public void scratch() {
-        System.out.println("SCRATCH");
-    }
-    
-    public void ember() {
-        System.out.println("BURN");
-    }
-    
-    public void dragonBreath() {
-        System.out.println("Dragon breath burnns");
-    }
-    
-    
 }
