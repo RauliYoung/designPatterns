@@ -23,6 +23,7 @@ public abstract class Game {
         int j = 0;
         while (!endOfGame()) {
             makePlay(j);
+            System.out.println("Pelaaja" + j + "pelaa");
             j = (j + 1) % playersCount;
         }
         printWinner();
