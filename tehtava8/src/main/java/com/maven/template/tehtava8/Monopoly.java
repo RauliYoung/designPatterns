@@ -45,6 +45,7 @@ public class Monopoly extends Game {
         //pelaajat heittelevät vuorollansa noppaa jolloin pelaaja liikkuu heitetyn määrän eteenpäin laudalla.
         playerPositions[player][currentPlayer] = Math.min(boardSize - 1, playerPositions[player][currentPlayer] + noppa);
         displayBoard();
+        //neljännen pelaajan kohdalla ongelma, tarkista indeksit että osaa päivittää nekin nollaksi. Positiot myös nollautuvat joka kierroksella, ei toivottavaa.
         if(currentPlayer == playersCount) {
             currentPlayer = 0;
         }else {
