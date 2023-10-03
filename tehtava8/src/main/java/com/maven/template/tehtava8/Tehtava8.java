@@ -11,7 +11,11 @@ package com.maven.template.tehtava8;
 public class Tehtava8 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Template Method");
+        Game peli = new Monopoly();
+        peli.playOneGame(3);
+        
+        
         
     }
 }
