@@ -12,7 +12,7 @@ public class Tehtava8 {
 
     public static void main(String[] args) {
         System.out.println("Template Method");
-        Game peli = new Monopoly();
+        Game peli = new Pinko();
         peli.playOneGame(4);
     }
 }
