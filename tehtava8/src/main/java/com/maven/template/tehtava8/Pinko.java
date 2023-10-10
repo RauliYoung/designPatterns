@@ -1,6 +1,5 @@
 package com.maven.template.tehtava8;
 
-import com.googlecode.lanterna.TerminalPosition;
 import com.googlecode.lanterna.TextCharacter;
 import com.googlecode.lanterna.graphics.TextGraphics;
 import com.googlecode.lanterna.gui2.TextBox;
@@ -46,7 +45,7 @@ public class Pinko extends Game {
     void printWinner() {
         //screen.clear();
         String voittaja = Integer.toString(currentPlayer);
-        textGraphics.putCSIStyledString(5, 10, "Voittaja on " + voittaja );
+        textGraphics.putCSIStyledString(5, 10, "Voittaja on pelaaja numero " + voittaja );
     }
 
     @Override
@@ -72,7 +71,17 @@ public class Pinko extends Game {
             String input = getUserInput();
             handleInput(input);
             if (input.equalsIgnoreCase("q")) {
-                isRunning = false;
+                textGraphics.putString(5,5, "Sure you want to quit??\n yes/no");
+                input = getUserInput();
+                if(input.equalsIgnoreCase("yes")) {
+                    screen.clear();
+                    displayInstructions();
+                }
+                if(input.equalsIgnoreCase("no")) {
+                    
+                    return;
+                }
+                        
             }
         }
 
