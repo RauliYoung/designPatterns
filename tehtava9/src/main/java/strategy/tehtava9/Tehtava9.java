@@ -15,8 +15,6 @@ public class Tehtava9 {
 
         //Prints new line every second time
         ListConverter strategy = new PrintNewLineEverySecond();
-
-        List<String> list = new ArrayList<>();
         a.add("Jaakko");
         a.add("Pekka");
         a.add("Maija");
