@@ -16,7 +16,7 @@ public class PrintNewLineEveryThird implements ListConverter {
             if ((i + 1) % 3 == 0) {
                 appendString += array[i] + "\n";
             } else {
-                appendString += array[i];
+                appendString += array[i] + " ";
             }
         }
         return appendString;
