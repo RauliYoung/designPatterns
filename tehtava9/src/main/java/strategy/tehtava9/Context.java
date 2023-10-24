@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class Context {
 
-    private List a = new ArrayList();
+    private List context = new ArrayList();
     private ListConverter converter;
 
     public Context(ListConverter converter) {
@@ -17,11 +17,15 @@ public class Context {
     }
 
     public void setList(List a) {
-        this.a = a;
+        this.context = a;
     }
 
     public List getList() {
-        return a;
+        return context;
+    }
+    
+    public void add(String content) {
+        context.add(content);
     }
 
     public ListConverter getConverter() {
