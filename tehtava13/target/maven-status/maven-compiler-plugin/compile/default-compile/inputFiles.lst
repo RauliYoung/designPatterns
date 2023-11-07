@@ -1,0 +1,9 @@
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/Pokemon.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/PokemonState.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/Charmander.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/Charmeleon.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/Charizard.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/PokemonTrainer.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/Tehtava13.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/PokemonStateVisitor.java
+/home/tristan/Documents/Github/designPatterns/tehtava13/src/main/java/visitor/tehtava13/BonusXpTrainer.java
