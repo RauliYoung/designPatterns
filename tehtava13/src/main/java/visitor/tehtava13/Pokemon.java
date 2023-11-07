@@ -5,7 +5,7 @@ package visitor.tehtava13;
  * @author tristan
  */
 public class Pokemon {
-
+    //Nimi nyt on toistaiseksi aina charmander....
     private String name = "Charmander";
 
     public static int stage = 1;
