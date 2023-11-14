@@ -14,8 +14,6 @@ public class Tehtava14 {
 
 /*
 
-Builder --> Interface
-
 Concrete Builder ---> Class implements builder
 
 Director ---> Class has a private Ibuilder
