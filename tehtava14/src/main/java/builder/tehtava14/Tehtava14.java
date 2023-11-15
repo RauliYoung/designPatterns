@@ -7,7 +7,7 @@ package builder.tehtava14;
 public class Tehtava14 {
 
     public static void main(String[] args) {
-        
+
     }
 }
 
