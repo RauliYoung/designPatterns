@@ -13,8 +13,8 @@ public class Riddler {
         return new Memento(secretNumber);
     }
     
-    public synchronized boolean checkGuess(Memento memento, int guess) {
-        return memento.getSecretNumber() == guess;
+    public synchronized boolean checkGuess(Object memento, int guess) {
+        return ((Memento)memento).getSecretNumber() == guess;
     }
 
 }

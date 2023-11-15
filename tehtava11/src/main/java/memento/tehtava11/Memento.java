@@ -13,7 +13,7 @@ public class Memento {
 
     }
 
-    public int getSecretNumber() {
+     int getSecretNumber() {
         return secretNumber;
     }
 
