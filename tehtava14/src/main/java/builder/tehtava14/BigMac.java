@@ -45,7 +45,7 @@ public class BigMac {
         ingredients.add(eggs);
         this.eggs = eggs;
     }
-
+    //Rehellisesti laiskistuin enkä jaksanut enää muotoilla näitä to stringeja
     @Override
     public String toString() {
         return "BigMac{" + "ingredients=" + ingredients + ", bun=" + bun + ", lettuce=" + lettuce + ", sauce=" + sauce + ", paddy=" + paddy + ", eggs=" + eggs + '}';
