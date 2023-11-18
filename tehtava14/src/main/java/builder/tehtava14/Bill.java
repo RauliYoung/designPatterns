@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package builder.tehtava14;
 
 /**
@@ -12,6 +8,16 @@ public class Bill {
 
     private IBurgerBill burgerBuilder;
 
-    //SetBuilderMethod
-    //ConstructBurger
+    public void setBurgerBill(IBurgerBill burgerBill) {
+        burgerBuilder = burgerBill;
+    }
+
+    public void buildBurger() {
+        burgerBuilder.buildNewBurger();
+        burgerBuilder.buildBuns();
+        burgerBuilder.buildBeefPaddy();
+        burgerBuilder.buildEggsBenedict();
+        burgerBuilder.buildLettuce();
+        burgerBuilder.buildSauce();
+    }
 }

@@ -7,6 +7,31 @@ package builder.tehtava14;
 public class Tehtava14 {
 
     public static void main(String[] args) {
+        
+        Bill iblly = new Bill();
+        
+        IBurgerBill mcDonald = new McDonalds();
+        
+        iblly.setBurgerBill(mcDonald);
+        
+        iblly.buildBurger();
+        
+        Object mac = mcDonald.getBurger();
+        
+        System.out.println(mac);
+        
+        
+        Bill opiskelija = new Bill();
+        
+        IBurgerBill niilo = new Hesburger();
+        
+        opiskelija.setBurgerBill(niilo);
+        
+        opiskelija.buildBurger();
+        
+        Object kertsi = niilo.getBurger();
+        
+        System.out.println(kertsi);
 
     }
 }
@@ -24,9 +49,9 @@ Product ----> class or classes as ingredients
 
 
 Builder: 
-Kirjoita ohjelma, jossa rakennat kerroshampurilaisen Builder-mallin mukaisesti.
+Kirjoita ohjelma, jossa rakennat kerroshampurilaisen Builder-mallin mukaisesti. 
 
-Toteuta vähintään kaksi konkreettista builderia (Hesburger ja McDonalds).
+Toteuta vähintään kaksi konkreettista builderia (Hesburger ja McDonalds). #
 
 Toteuta builderit siten, että kummallekin hampurilaiselle on erilainen tietorakennetoteutus.
 

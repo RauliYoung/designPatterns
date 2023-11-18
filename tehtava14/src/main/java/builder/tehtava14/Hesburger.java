@@ -6,40 +6,44 @@ package builder.tehtava14;
  */
 //Concrete Builder ---> Class implements builder
 public class Hesburger implements IBurgerBill {
+    
+    private Kerroshampurilainen hamppari;
+    
 
     @Override
     public void buildLettuce() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        hamppari.setLettuce("Jäävuorisalaatti");
     }
 
     @Override
     public void buildBuns() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        hamppari.setBun("Hampurilais sämpylä");
     }
 
     @Override
     public void buildBeefPaddy() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        hamppari.setBeefPaddy("Naudanliha Pihvi");
     }
 
     @Override
     public void buildSauce() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        hamppari.setSauce("Paprika majoneesi");
     }
 
     @Override
     public void buildEggsBenedict() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+       hamppari.setEggsBenedict("Uppomuna");
     }
 
     @Override
     public void buildNewBurger() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.hamppari = new Kerroshampurilainen();
+        System.out.println(this.hamppari);
     }
 
     @Override
     public Object getBurger() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return ((Kerroshampurilainen)hamppari);
     }
-
+    
 }
