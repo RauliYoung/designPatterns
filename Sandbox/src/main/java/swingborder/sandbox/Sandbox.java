@@ -24,7 +24,7 @@ public class Sandbox extends JFrame {
         String flyweight = (fly + weight).intern();
         System.out.println(flyweight == "flyweight");
 
-        // Displaying the output in a JOptionPane
+
         String message = "fly == fly2: " + (fly == fly2) + "\n"
                 + "weight == weight2: " + (weight == weight2) + "\n"
                 + "distinctString == \"flyweight\": " + (distinctString == "flyweight") + "\n"
