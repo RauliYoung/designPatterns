@@ -4,9 +4,20 @@ package prototype.tehtava18;
  *
  * @author tristan
  */
-public class TuntiViisari {
+public class TuntiViisari implements Cloneable {
 
     private int tunti;
+
+    public TuntiViisari clone() {
+        TuntiViisari m = null;
+        try {
+            m = (TuntiViisari) super.clone();
+
+        } catch (Exception e) {
+            return null;
+        }
+        return m;
+    }
 
     public TuntiViisari() {
         this.tunti = 0;
